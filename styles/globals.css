@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'DOMAINE';
-  src: url('../fonts/Domine/Domine-VariableFont_wght.ttf');
+  src: url('../fonts/Domine/FontsFree-Net-DomaineDisplayBold.ttf');
 }
 
 @font-face {
@@ -16,4 +16,33 @@
   html {
     @apply font-inter;
   }
+
+  ul > li,
+  a,
+  button {
+    @apply cursor-pointer;
+  }
+  span {
+    background: -webkit-linear-gradient(right, #be39f6, #d79dff, #772ff5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
+
+@layer utilities {
+  .hero_txt::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -130px;
+    height: 180px;
+    width: 180px;
+    background: -webkit-linear-gradient(right, #be39f6, #772ff5);
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+/* #BE39F6 */
+/* #D79DFF */
+/* #772FF5 */

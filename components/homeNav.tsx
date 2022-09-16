@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
+import Container from './container';
 
 const HomeNav = () => {
   return (
-    <div className='container flex justify-center'>
+    // <div className='container flex justify-center'>
+    <Container>
       <div className=' p-2 w-full h-auto  flex items-center justify-between max-w-6xl'>
         <div>
           <Image
@@ -23,7 +25,8 @@ const HomeNav = () => {
           </ul>
         </div>
       </div>
-    </div>
+      {/* </div> */}
+    </Container>
   );
 };
 

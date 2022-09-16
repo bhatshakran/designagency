@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import { useTheme } from 'next-themes';
 import Head from 'next/head';
 import React from 'react';
+import Hero from '../components/hero';
 
 const Home: NextPage = () => {
   const { theme, setTheme } = useTheme();
@@ -24,15 +25,16 @@ const Home: NextPage = () => {
       </Head>
 
       <main className=''>
+        <Hero />
         <div>
-          The current theme is: {theme}
+          {/* The current theme is: {theme}
           <button
             onClick={() =>
               theme === 'light' ? setTheme('dark') : setTheme('light')
             }
           >
             Toggle theme
-          </button>
+          </button> */}
         </div>
       </main>
     </div>
