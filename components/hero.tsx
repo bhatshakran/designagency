@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Container from './container';
+import Stats from './stats';
 
 const Hero = () => {
   return (
@@ -28,6 +29,8 @@ const Hero = () => {
           />
         </div> */}
       </div>
+
+      <Stats />
     </Container>
   );
 };

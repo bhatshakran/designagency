@@ -66,6 +66,14 @@
     letter-spacing: -3px;
   }
 
+  .feature_card {
+    @apply flex flex-col gap-4 w-48 justify-start  items-center;
+  }
+
+  .feature_card > h3 {
+    @apply text-lg h-12;
+  }
+
   @media screen and (max-width: 640px) {
     .hero_txt::before {
       height: 80px;
