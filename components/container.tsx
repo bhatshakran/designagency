@@ -1,4 +1,4 @@
-import React, { Component, FC, ReactNode } from 'react';
+import React from 'react';
 
 interface Props {
   children: React.ReactNode;
