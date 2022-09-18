@@ -77,9 +77,8 @@
   .grad_border {
     overflow: visible;
     box-sizing: border-box;
-    /* background: red; */
     width: 150px;
-    height: 165px;
+    height: 167px;
     background: linear-gradient(to right, #be39f6, #d79dff, #772ff5);
     background-clip: padding-box; /* !importanté */
     border: solid 10px transparent; /* !importanté */
@@ -89,8 +88,7 @@
   .large {
     overflow: visible;
     box-sizing: border-box;
-    /* background: red; */
-    width: 185px;
+    width: 188px;
     height: 178px;
     background: linear-gradient(to right, #be39f6, #d79dff, #772ff5);
     background-clip: padding-box; /* !importanté */
@@ -103,8 +101,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background: white;
-    width: 109px;
+    width: 110px;
     height: 120px;
     z-index: 10;
   }
@@ -114,8 +111,7 @@
     position: absolute;
     top: 10px;
     left: 12px;
-    background: white;
-    width: 140px;
+    width: 143px;
     height: 130px;
     z-index: 10;
   }
@@ -123,15 +119,15 @@
   .img_container {
     display: block;
     position: absolute;
-    /* background: red; */
     top: -10px;
-    left: 9px;
+    left: 9.5px;
 
     z-index: 1000;
   }
 
   .large > .img_container {
     top: -45px;
+    left: 11px;
   }
   @media screen and (max-width: 640px) {
     .hero_txt::before {
