@@ -6,8 +6,8 @@ import GradBorder from './gradBorder';
 const Shoutouts = () => {
   return (
     <Container>
-      <div className='mt-32 '>
-        <div className='flex gap-24'>
+      <div className='mt-48'>
+        <div className='flex gap-24 justify-center'>
           <div>
             <GradBorder>
               <Image
@@ -39,6 +39,15 @@ const Shoutouts = () => {
               />
             </GradBorder>
           </div>
+        </div>
+        <div className='mt-16 w-full text-center'>
+          <p className='max-w-4xl mx-auto font-domaine text-3xl'>
+            “Write is super-useful as we can see the actual text in the actual
+            design. We can even adjust text length to make it look good!”
+          </p>
+
+          <h5 className='mt-6 text-lg font-extrabold'>Robert Downery Jr.</h5>
+          <h6> Founder at Marvel</h6>
         </div>
       </div>
     </Container>
