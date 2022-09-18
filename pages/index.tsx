@@ -3,6 +3,7 @@ import { useTheme } from 'next-themes';
 import Head from 'next/head';
 import React from 'react';
 import Hero from '../components/hero';
+import Shoutouts from '../components/shoutouts';
 import Techniques from '../components/techniques';
 
 const Home: NextPage = () => {
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
       <main className=''>
         <Hero />
         <Techniques />
+        <Shoutouts />
         <div className='mt-20'>
           The current theme is: {theme}
           <button

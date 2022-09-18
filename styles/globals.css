@@ -74,6 +74,65 @@
     @apply text-lg h-12;
   }
 
+  .grad_border {
+    overflow: visible;
+    box-sizing: border-box;
+    /* background: red; */
+    width: 150px;
+    height: 165px;
+    background: linear-gradient(to right, #be39f6, #d79dff, #772ff5);
+    background-clip: padding-box; /* !importanté */
+    border: solid 10px transparent; /* !importanté */
+    position: relative;
+  }
+
+  .large {
+    overflow: visible;
+    box-sizing: border-box;
+    /* background: red; */
+    width: 185px;
+    height: 178px;
+    background: linear-gradient(to right, #be39f6, #d79dff, #772ff5);
+    background-clip: padding-box; /* !importanté */
+    border: solid 10px transparent; /* !importanté */
+    position: relative;
+  }
+
+  .grad_border:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    width: 109px;
+    height: 120px;
+    z-index: 10;
+  }
+
+  .large:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    background: white;
+    width: 140px;
+    height: 130px;
+    z-index: 10;
+  }
+
+  .img_container {
+    display: block;
+    position: absolute;
+    /* background: red; */
+    top: -10px;
+    left: 9px;
+
+    z-index: 1000;
+  }
+
+  .large > .img_container {
+    top: -45px;
+  }
   @media screen and (max-width: 640px) {
     .hero_txt::before {
       height: 80px;
