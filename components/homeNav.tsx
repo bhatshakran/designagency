@@ -9,8 +9,8 @@ const HomeNav = () => {
 
   return (
     // <div className='container flex justify-center'>
-    <Container>
-      <div className=' p-2 w-full h-auto  flex items-center justify-between max-w-6xl'>
+    <div className=' p-2 w-full h-auto  flex items-center justify-between '>
+      <Container justify='justify-between'>
         <div>
           <Image
             src='/assets/jdlogo.svg'
@@ -42,9 +42,8 @@ const HomeNav = () => {
             </li>
           </ul>
         </div>
-      </div>
-      {/* </div> */}
-    </Container>
+      </Container>
+    </div>
   );
 };
 

@@ -29,6 +29,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  option {
+    padding: 20px;
+  }
 }
 
 @layer utilities {
@@ -139,6 +143,10 @@
 
   .principles {
     background: linear-gradient(302.38deg, #be39f6 12.85%, #772ff5 61.46%);
+  }
+
+  .departments li {
+    @apply mt-4;
   }
   @media screen and (max-width: 640px) {
     .hero_txt::before {

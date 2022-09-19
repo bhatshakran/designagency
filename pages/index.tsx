@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import Contact from '../components/contact';
+import Contact from './contact';
 import Hero from '../components/hero';
 import Shoutouts from '../components/shoutouts';
 import Techniques from '../components/techniques';

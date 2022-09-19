@@ -5,7 +5,7 @@ import GradBorder from './gradBorder';
 
 const Shoutouts = () => {
   return (
-    <Container>
+    <Container justify='justify-center'>
       <div className='mt-48'>
         <div className='flex flex-wrap gap-24 justify-center'>
           <div>

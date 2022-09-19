@@ -4,7 +4,7 @@ import Container from './container';
 
 const Techniques = () => {
   return (
-    <Container>
+    <Container justify='justify-center'>
       <div className='mt-60'>
         <div className='text-center flex flex-col items-center'>
           <h2 className='font-domaine text-2xl sm:text-3xl md:text-4xl'>

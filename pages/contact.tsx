@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from './container';
+import Container from '../components/container';
 
 const Contact = () => {
   return (
-    <Container>
+    <Container justify='justify-center'>
       <div className='mt-40'>
         <div className='flex flex-col md:flex-row items-center md:items-baseline gap-20 '>
           <div className='w-60'>
