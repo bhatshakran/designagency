@@ -5,11 +5,13 @@
 @font-face {
   font-family: 'DOMAINE';
   src: url('../fonts/Domine/FontsFree-Net-DomaineDisplayBold.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+  font-display: swap;
 }
 
 @layer base {
@@ -128,6 +130,11 @@
   .large > .img_container {
     top: -45px;
     left: 11px;
+  }
+
+  .btn {
+    background: linear-gradient(271.19deg, #be39f6 -14.63%, #772ff5 82.5%);
+    @apply text-white w-full px-6 py-2;
   }
   @media screen and (max-width: 640px) {
     .hero_txt::before {

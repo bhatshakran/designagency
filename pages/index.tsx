@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import { useTheme } from 'next-themes';
 import Head from 'next/head';
 import React from 'react';
+import Contact from '../components/contact';
 import Hero from '../components/hero';
 import Shoutouts from '../components/shoutouts';
 import Techniques from '../components/techniques';
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
         <Hero />
         <Techniques />
         <Shoutouts />
+        <Contact />
         <div className='mt-20'>
           The current theme is: {theme}
           <button
