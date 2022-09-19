@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from '../components/contact';
 import Container from '../components/container';
 import Member from '../components/member';
 
@@ -7,11 +8,11 @@ const About = () => {
     <Container>
       <div className='mt-20'>
         <div className='flex items-center flex-col text-center'>
-          <div>
-            <span className='text-5xl font-domaine md:text-7xl'>
+          <div className='flex items-center flex-col'>
+            <span className='text-4xl sm:text-5xl font-domaine md:text-7xl'>
               Get to know us
             </span>
-            <p className='max-w-sm mt-6 md:max-w-xl'>
+            <p className='text-xs  sm:text-md w-48 sm:max-w-sm mt-6 md:max-w-xl'>
               We focus our efforts on creating solutions to discuss each one
               bringing you a step closer to the optimal version.
             </p>
@@ -34,6 +35,74 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        <div className='principles text-white mt-20 py-16 px-8 sm:p-16'>
+          <div>
+            <h2 className='w-auto font-domaine text-3xl sm:text-4xl '>
+              Our principles
+            </h2>
+          </div>
+
+          <div className='grid grid-cols-1 sm:grid-cols-2 mt-16 gap-16 sm:gap-8'>
+            <div className='flex flex-col sm:items-center justify-between '>
+              <h4 className='text-lg sm:text-2xl mb-4 sm:mb-8 font-domaine'>
+                Patterns are everywhere
+              </h4>
+              <p className='text-sm sm:text-md'>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Delectus, aliquam.
+              </p>
+            </div>
+            <div className='flex flex-col sm:items-center justify-between'>
+              <h4 className='text-lg sm:text-2xl mb-4 sm:mb-8 font-domaine'>
+                We offer solutions
+              </h4>
+              <p className='text-sm sm:text-md'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+                quae.
+              </p>
+            </div>
+            <div className='flex flex-col sm:items-center justify-between'>
+              <h4 className='text-lg sm:text-2xl mb-4 sm:mb-8 font-domaine'>
+                With optimality in mind
+              </h4>
+              <p className='text-sm sm:text-md'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+                quae.
+              </p>
+            </div>
+            <div className='flex flex-col sm:items-center justify-between'>
+              <h4 className='text-lg sm:text-2xl mb-4 sm:mb-8 font-domaine'>
+                We dont reinvent the wheel
+              </h4>
+              <p className='text-sm sm:text-md'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+                quae.
+              </p>
+            </div>
+            <div className='flex flex-col sm:items-center justify-between'>
+              <h4 className='text-lg sm:text-2xl mb-4 sm:mb-8 font-domaine'>
+                We always look at the design
+              </h4>
+              <p className='text-sm sm:text-md'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+                quae.
+              </p>
+            </div>
+            <div className='flex flex-col sm:items-center justify-between'>
+              <h4 className='text-lg sm:text-2xl mb-4 sm:mb-8 font-domaine'>
+                We ensure the basics
+              </h4>
+              <p className='text-sm sm:text-md'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+                quae.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <Contact />
+        {/* <Footer */}
       </div>
     </Container>
   );

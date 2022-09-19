@@ -136,6 +136,10 @@
     background: linear-gradient(271.19deg, #be39f6 -14.63%, #772ff5 82.5%);
     @apply text-white w-full px-6 py-2;
   }
+
+  .principles {
+    background: linear-gradient(302.38deg, #be39f6 12.85%, #772ff5 61.46%);
+  }
   @media screen and (max-width: 640px) {
     .hero_txt::before {
       height: 80px;
