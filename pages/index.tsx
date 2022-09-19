@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import { useTheme } from 'next-themes';
 import Head from 'next/head';
 import React from 'react';
 import Contact from '../components/contact';
@@ -8,7 +7,6 @@ import Shoutouts from '../components/shoutouts';
 import Techniques from '../components/techniques';
 
 const Home: NextPage = () => {
-  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = React.useState<boolean>(false);
 
   React.useEffect(() => {
@@ -32,16 +30,6 @@ const Home: NextPage = () => {
         <Techniques />
         <Shoutouts />
         <Contact />
-        <div className='mt-20'>
-          The current theme is: {theme}
-          <button
-            onClick={() =>
-              theme === 'light' ? setTheme('dark') : setTheme('light')
-            }
-          >
-            Toggle theme
-          </button>
-        </div>
       </main>
     </div>
   );
