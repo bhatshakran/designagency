@@ -13,18 +13,31 @@ const Container: React.FC<Props> = ({
   col,
   mini = 'false',
 }) => {
-  mini === true && <div className=''>{children}</div>;
-  return (
-    <div className='flex justify-center w-full'>
-      <div
-        className={`w-full max-w-6xl flex ${
-          col && 'flex-col'
-        }  items-center ${justify}  overflow-hidden`}
-      >
-        {children}
+  if (mini === true) {
+    return (
+      <div className='flex justify-center w-full'>
+        <div
+          className={`w-full max-w-6xl flex ${
+            col && 'flex-col'
+          }   ${justify}  overflow-hidden`}
+        >
+          {children}
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div className='flex justify-center w-full'>
+        <div
+          className={`w-full max-w-6xl flex ${
+            col && 'flex-col'
+          }  items-center ${justify}  overflow-hidden`}
+        >
+          {children}
+        </div>
+      </div>
+    );
+  }
 };
 
 export default Container;
