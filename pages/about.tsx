@@ -13,7 +13,7 @@ const About = () => {
               <span className='text-4xl sm:text-5xl font-domaine md:text-7xl'>
                 Get to know us
               </span>
-              <p className='text-xs  sm:text-md w-48 sm:max-w-sm mt-6 md:max-w-xl'>
+              <p className='text-sm  sm:text-lg w-56 sm:max-w-lg sm:w-auto mt-6 md:max-w-xl'>
                 We focus our efforts on creating solutions to discuss each one
                 bringing you a step closer to the optimal version.
               </p>

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import Container from './container';
 import { MdDarkMode, MdOutlineLightMode } from 'react-icons/md';
+import Link from 'next/link';
 
 const HomeNav = () => {
   const { theme, setTheme } = useTheme();
@@ -22,10 +23,18 @@ const HomeNav = () => {
 
         <div>
           <ul className='list-none flex'>
-            <li className='mx-2'>Home</li>
-            <li className='mx-2'>About</li>
-            <li className='mx-2'>Careers</li>
-            <li className='mx-2'>Contact</li>
+            <li className='mx-2'>
+              <Link href='/'> Home</Link>
+            </li>
+            <li className='mx-2'>
+              <Link href='/about'> About</Link>
+            </li>
+            <li className='mx-2'>
+              <Link href='/careers'> Careers</Link>
+            </li>
+            <li className='mx-2'>
+              <Link href='/contact'> Contact</Link>
+            </li>
             <li className='mx-2 flex items-center'>
               <button
                 className=' focus:outline-none outline-none'
